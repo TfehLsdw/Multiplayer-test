@@ -1,4 +1,4 @@
-if (scr_checkPlayersReady())
+if (global.isHost && scr_checkPlayersReady())
 {
 	scr_gameStart()
 }
