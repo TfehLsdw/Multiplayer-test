@@ -34,34 +34,18 @@ function scr_PushPlayerData()
 }
 
 ///@desc makes sure all player data inside each object is equal to the data from the array
-function scr_RefreshPlayerData(_index = noone)
+function scr_RefreshPlayerData()
 {
 	var _PlayerList = global.playerData
 	
-	if (_index == noone)
-	{
 		for (var i = 0; i<array_length(_PlayerList); i++)
 		{
 			with (_PlayerList[i].playerObject) 
 			{
 				currentScreen = _PlayerList[i].currentScreen;
 				currentY = _PlayerList[i].currentY;
+				show_debug_message("updated player " + string(i))
 			}
 		}
-	}
-	
-	else
-	{
-		var pIndex = _index;
 		
-		with (_PlayerList[pIndex].playerObject) 
-		{
-			currentScreen = _PlayerList[pIndex].currentScreen;
-			currentY = _PlayerList[pIndex].currentY;
-		}
-		
-	}
-	
-//show_debug_message("all player data refreshed")
-
 }
