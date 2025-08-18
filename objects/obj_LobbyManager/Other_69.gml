@@ -18,7 +18,7 @@ switch(async_load[? "event_type"])
 				scr_sendArray(_requestingId, NETWORK_PACKETS.SEND_ARRAY_ALL_LIST, global.playerList)
 			}	
 	}
-			else if (async_load[? "change_flags"] & steam_lobby_member_change_disconnected)
+			if (async_load[? "change_flags"] & steam_lobby_member_change_disconnected)
 			{
 				show_debug_message("player " + steam_get_user_persona_name_sync(_requestingId) + " left the lobby" );
 				
