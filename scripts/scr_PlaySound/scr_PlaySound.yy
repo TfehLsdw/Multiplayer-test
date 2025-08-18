@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_PlaySound",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Game Scripts",
+    "path":"folders/Scripts/Game Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

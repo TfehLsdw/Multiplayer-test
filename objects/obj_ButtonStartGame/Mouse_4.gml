@@ -1,6 +1,6 @@
-if (steam_lobby_get_owner_id() == global.localSteamId && scr_checkPlayersReady())
+if (scr_checkPlayersReady())
 {
-	scr_gameStartHost()
+	scr_gameStart()
 }
 
 //else if (steam_lobby_get_owner_id() == steam_get_user_steam_id() && steam_lobby_get_member_count() != 2)

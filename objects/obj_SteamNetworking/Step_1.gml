@@ -21,8 +21,8 @@ while (steam_net_packet_receive())
 			var _function = buffer_read(inbuf, buffer_u8)
 				switch (_function)
 					{
-						case NETWORK_FUNCTIONS.GAME_START_CLIENT:
-							scr_gameStartClient()
+						case NETWORK_FUNCTIONS.GAME_START:
+							scr_gameStart()
 							break;
 					}
 				break;

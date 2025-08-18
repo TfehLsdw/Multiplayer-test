@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_exitToMainMenu",
   "parent":{
-    "name":"Game Scripts",
-    "path":"folders/Scripts/Game Scripts.yy",
+    "name":"Menu Scripts",
+    "path":"folders/Scripts/Menu Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

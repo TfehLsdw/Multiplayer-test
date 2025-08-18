@@ -6,7 +6,7 @@
   "name":"scr_CreateLobby",
   "parent":{
     "name":"LobbyScripts",
-    "path":"folders/Scripts/LobbyScripts.yy",
+    "path":"folders/Scripts/Network Scripts/LobbyScripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
