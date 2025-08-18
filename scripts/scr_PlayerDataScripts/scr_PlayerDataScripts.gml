@@ -25,11 +25,8 @@ function scr_DefaultPlayerData(_slot)
 ///@desc Pushes the current player data into the array
 function scr_PushPlayerData()
 {	
-	var _PlayerList = global.playerData
-			
-			_PlayerList[playerNumber].currentScreen = currentScreen;
-			_PlayerList[playerNumber].currentY = currentY;
-			
+	global.playerData[playerNumber].currentScreen = currentScreen;
+	global.playerData[playerNumber].currentY = currentY;		
 			//show_debug_message("player data pushed")
 }
 
