@@ -1,0 +1,1 @@
+inbuf = buffer_create(16, buffer_grow, 1)

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_CreateLobby",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_CreateLobby",
+  "parent":{
+    "name":"LobbyScripts",
+    "path":"folders/Scripts/LobbyScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
