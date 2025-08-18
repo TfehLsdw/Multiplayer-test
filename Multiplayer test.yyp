@@ -69,6 +69,7 @@
     {"id":{"name":"AllowedNetworkFunctions","path":"scripts/AllowedNetworkFunctions/AllowedNetworkFunctions.yy",},},
     {"id":{"name":"Packets","path":"scripts/Packets/Packets.yy",},},
     {"id":{"name":"scr_CreateLobby","path":"scripts/scr_CreateLobby/scr_CreateLobby.yy",},},
+    {"id":{"name":"scr_exitToMainMenu","path":"scripts/scr_exitToMainMenu/scr_exitToMainMenu.yy",},},
     {"id":{"name":"scr_gameStart","path":"scripts/scr_gameStart/scr_gameStart.yy",},},
     {"id":{"name":"scr_otherPlayerId","path":"scripts/scr_otherPlayerId/scr_otherPlayerId.yy",},},
     {"id":{"name":"scr_PlayerDataScripts","path":"scripts/scr_PlayerDataScripts/scr_PlayerDataScripts.yy",},},

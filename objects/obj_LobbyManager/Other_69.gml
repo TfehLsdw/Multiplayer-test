@@ -7,7 +7,7 @@ switch(async_load[? "event_type"])
 				//show_debug_message("Flags: " + string(async_load[? "change_flags"]));
 				//show_debug_message("ID: " + string(_requestingId));
 
-	if (isHost)
+	if (global.isHost)
 	{
 			if (async_load[? "change_flags"] & steam_lobby_member_change_entered)
 			{
@@ -23,7 +23,7 @@ switch(async_load[? "event_type"])
 				show_debug_message("player " + steam_get_user_persona_name_sync(_requestingId) + " left the lobby" );
 				
 				scr_removePlayerFromList(_requestingId)
-				isHost = true;
+				global.isHost = (steam_lobby_get_owner_id() == global.localSteamId)
 			}
 				break
 	}

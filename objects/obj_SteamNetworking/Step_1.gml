@@ -10,11 +10,11 @@ while (steam_net_packet_receive())
 	switch (_packet)
 	{
 		case NETWORK_PACKETS.SEND_ARRAY_ALL_LIST:
-			scr_handleSendArrayAll(inbuf, global.playerList)
+			global.playerList = scr_handleSendArrayAll(inbuf)
 				break;
 				
 		case NETWORK_PACKETS.SEND_ARRAY_ALL_DATA:
-			scr_handleSendArrayAll(inbuf, global.playerData)
+			global.playerData = scr_handleSendArrayAll(inbuf)
 				break;
 		case NETWORK_PACKETS.SEND_EXECUTE_FUNCTION:
 			

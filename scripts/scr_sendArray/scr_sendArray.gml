@@ -11,9 +11,9 @@ function scr_sendArray(_targetSteamId, _packet, _array)
 }
 
 ///@desc function to recieve the entire array and replace its own version with the recieved
-function scr_handleSendArrayAll(_buffer, _oldArray)
+function scr_handleSendArrayAll(_buffer)
 {
 	var _newArray = buffer_read(_buffer, buffer_string)
 			_newArray = json_parse(_newArray)
-			_oldArray = _newArray;
+			return _newArray;
 }
