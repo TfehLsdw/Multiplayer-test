@@ -1,3 +1,1 @@
-global.playerData[0].currentY += 10;
-
-scr_RefreshPlayerData()
+show_debug_message(global.isHost)

@@ -26,6 +26,7 @@ switch(async_load[? "event_type"])
 			//		break;
 					
 			//}
+			
 			if (_change_flags & steam_lobby_member_change_entered)
 			{
 				if (global.isHost)
@@ -37,7 +38,7 @@ switch(async_load[? "event_type"])
 				}
 			}	
 	
-			if (_change_flags & steam_lobby_member_change_disconnected)
+			if (_change_flags & steam_lobby_member_change_left)
 			{
 				show_debug_message("player " + steam_get_user_persona_name_sync(_requestingId) + " left the lobby" );
 				
