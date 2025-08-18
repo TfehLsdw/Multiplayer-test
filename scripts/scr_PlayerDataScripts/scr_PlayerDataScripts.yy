@@ -6,7 +6,7 @@
   "name":"scr_PlayerDataScripts",
   "parent":{
     "name":"LobbyScripts",
-    "path":"folders/Scripts/Network Scripts/LobbyScripts.yy",
+    "path":"folders/Scripts/LobbyScripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
