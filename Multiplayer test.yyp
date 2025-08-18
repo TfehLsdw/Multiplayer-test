@@ -78,6 +78,7 @@
     {"id":{"name":"scr_PlaySound","path":"scripts/scr_PlaySound/scr_PlaySound.yy",},},
     {"id":{"name":"scr_sendArray","path":"scripts/scr_sendArray/scr_sendArray.yy",},},
     {"id":{"name":"scr_sendExecuteFunction","path":"scripts/scr_sendExecuteFunction/scr_sendExecuteFunction.yy",},},
+    {"id":{"name":"scr_sendPlayerGameplayData","path":"scripts/scr_sendPlayerGameplayData/scr_sendPlayerGameplayData.yy",},},
     {"id":{"name":"scr_SpawnPlayers","path":"scripts/scr_SpawnPlayers/scr_SpawnPlayers.yy",},},
     {"id":{"name":"snd_VineBoom","path":"sounds/snd_VineBoom/snd_VineBoom.yy",},},
     {"id":{"name":"spr_Button","path":"sprites/spr_Button/spr_Button.yy",},},

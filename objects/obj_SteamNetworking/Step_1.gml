@@ -15,8 +15,13 @@ while (steam_net_packet_receive())
 				
 		case NETWORK_PACKETS.SEND_ARRAY_ALL_DATA:
 			global.playerData = scr_handleSendArrayAll(inbuf)
+				break;
+				
+		case NETWORK_PACKETS.SEND_PLAYER_GAMEPLAY_DATA:
+			scr_handleSendPlayerGameplayData(inbuf)
 			scr_RefreshPlayerData()
 				break;
+			
 		case NETWORK_PACKETS.SEND_EXECUTE_FUNCTION:
 			
 			var _function = buffer_read(inbuf, buffer_u8)

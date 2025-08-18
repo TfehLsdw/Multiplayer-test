@@ -45,7 +45,7 @@ if (isLocal)
 	if (needUpdate)
 	{
 		scr_PushPlayerData()
-		scr_sendArray(scr_otherPlayerId(), NETWORK_PACKETS.SEND_ARRAY_ALL_DATA, global.playerData)
+		scr_sendPlayerGameplayData(scr_otherPlayerId(), playerNumber)
 	}
 }
 y = currentY
