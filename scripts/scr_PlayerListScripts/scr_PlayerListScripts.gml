@@ -14,9 +14,10 @@ function scr_removePlayerFromList(_steamId)
 	{
 		if(global.playerList[i].steamId == _steamId)
 		{
-			global.playerList = array_delete(global.playerList, i, 1)
+			// show_debug_message("removed " + string(global.playerList[i].steamName) + " from the lobby")
 			
-			show_debug_message("removed " + string(global.playerList[i].steamName) + " from the lobby")
+			array_delete(global.playerList, i, 1)
+			
 			scr_refreshPlayerListNumber()
 			
 			break;
