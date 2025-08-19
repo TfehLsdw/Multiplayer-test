@@ -1,1 +1,1 @@
-show_debug_message(global.isHost)
+scr_refreshPlayerListNumber()

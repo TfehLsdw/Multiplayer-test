@@ -1,2 +1,1 @@
-scr_initPlayerData()
-scr_SpawnPlayers()
+array_delete(global.playerList,0,1)

@@ -5,12 +5,12 @@ function scr_initPlayerData()
 
 	for (var i = 0; i < array_length(global.playerList); i++)
 	{
-		array_push(global.playerData,scr_DefaultPlayerData(i));
+		array_push(global.playerData,scr_defaultPlayerData(i));
 	}
 }
 
 ///@desc returns the default values according to the requested slot
-function scr_DefaultPlayerData(_slot)
+function scr_defaultPlayerData(_slot)
 {
 	return {
 			playerNumber : _slot,
@@ -23,7 +23,7 @@ function scr_DefaultPlayerData(_slot)
 
 ///@self obj_Player
 ///@desc Pushes the current player data into the array
-function scr_PushPlayerData()
+function scr_pushPlayerData()
 {	
 	global.playerData[playerNumber].currentScreen = currentScreen;
 	global.playerData[playerNumber].currentY = currentY;		
@@ -31,7 +31,7 @@ function scr_PushPlayerData()
 }
 
 ///@desc makes sure all player data inside each object is equal to the data from the array
-function scr_RefreshPlayerData()
+function scr_refreshPlayerGameplayData()
 {
 	var _PlayerList = global.playerData
 	

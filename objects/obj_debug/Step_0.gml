@@ -32,7 +32,7 @@ var needUpdate = false;
 		if (needUpdate == true)
 		
 		{
-			scr_RefreshPlayerData()
+			scr_refreshPlayerGameplayData()
 		}
 //im trying to make it so there are 2 seperate objects of the same instance that get controlled by simply changing the variable
 //this is because its basically the only way I get to control what actually happens ingame so I need to be able to seperate them

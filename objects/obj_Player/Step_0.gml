@@ -44,7 +44,7 @@ if (isLocal)
 	
 	if (needUpdate)
 	{
-		scr_PushPlayerData()
+		scr_pushPlayerData()
 		scr_sendPlayerGameplayData(scr_otherPlayerId(), playerNumber)
 	}
 }

@@ -1,3 +1,3 @@
-scr_addPlayerToList(steam_get_user_account_id())
+scr_addPlayerToList(steam_get_user_steam_id())
 
 show_debug_message( json_stringify(global.playerList) );

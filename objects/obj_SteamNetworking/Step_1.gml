@@ -19,7 +19,7 @@ while (steam_net_packet_receive())
 				
 		case NETWORK_PACKETS.SEND_PLAYER_GAMEPLAY_DATA:
 			scr_handleSendPlayerGameplayData(inbuf)
-			scr_RefreshPlayerData()
+			scr_refreshPlayerGameplayData()
 				break;
 			
 		case NETWORK_PACKETS.SEND_EXECUTE_FUNCTION:
