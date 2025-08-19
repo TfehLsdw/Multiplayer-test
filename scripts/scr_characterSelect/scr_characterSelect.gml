@@ -11,10 +11,11 @@ function scr_selectCharacter(_characterId)
 function scr_whoSelectingMe()
 {
 	var _arrayLength = array_length(global.playerList)
-
+	
+	var _p1connected = (_arrayLength > 0)
 	var _p2connected = (_arrayLength > 1)
 	
-	player1selected = (global.playerList[0].currentCharacter == characterId)
+	player1selected = _p1connected && (global.playerList[0].currentCharacter == characterId);
 	player2selected = _p2connected && (global.playerList[1].currentCharacter == characterId);
 }
 
