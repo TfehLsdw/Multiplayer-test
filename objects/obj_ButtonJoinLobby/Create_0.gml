@@ -1,3 +1,3 @@
 event_inherited()
 
-request = noone
+global.request = noone

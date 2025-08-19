@@ -1,1 +1,1 @@
-Scr_CreateLobby()
+scr_createLobby()
