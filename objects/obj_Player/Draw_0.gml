@@ -17,4 +17,5 @@ draw_text(x+600,y+120,"currentCharacter: " + string(currentCharacter))
 
 draw_text(x+600,y+150,"currentY: " + string(currentY))
 
+sprite_index = characterSprite
 image_index = playerNumber;

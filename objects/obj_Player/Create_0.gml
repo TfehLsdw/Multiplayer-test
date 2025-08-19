@@ -7,7 +7,20 @@ playerCamera = camera_create_view(0,0,1920,1080)
 view_set_camera(0, playerCamera)
 }
 
-image_index = playerNumber;
+characterSprite = noone
+
+switch (currentCharacter)
+{
+	case 0:
+		characterSprite = spr_Baller
+			break
+	case 1:
+		characterSprite = spr_Matan
+			break
+	case 2:
+		characterSprite = spr_Rammus
+			break
+}
 
 y = currentY;
 //inside each player instance will be the code to perform the actions that are available

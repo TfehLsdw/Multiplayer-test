@@ -2,7 +2,6 @@ draw_set_font(fnt_gm_20)
 draw_set_valign(fa_top)
 draw_set_halign(fa_left)
 
-
 draw_text(50,100,"Lobby ID: " + string(steam_lobby_get_lobby_id()))
 
 draw_text(50,130,"Lobby Code: " + string(steam_lobby_get_data("Code")))
