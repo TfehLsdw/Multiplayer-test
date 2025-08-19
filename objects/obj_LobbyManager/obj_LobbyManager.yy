@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Networking Objects",
-    "path":"folders/Objects/Networking Objects.yy",
+    "path":"folders/Objects/Persistent objects/Networking Objects.yy",
   },
   "parentObjectId":null,
   "persistent":true,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Server",
-    "path":"sprites/spr_Server/spr_Server.yy",
+    "name":"spr_LobbyManager",
+    "path":"sprites/spr_LobbyManager/spr_LobbyManager.yy",
   },
   "spriteMaskId":null,
   "visible":true,

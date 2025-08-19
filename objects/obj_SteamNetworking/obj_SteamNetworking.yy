@@ -11,8 +11,8 @@
   "name":"obj_SteamNetworking",
   "overriddenProperties":[],
   "parent":{
-    "name":"Persistent objects",
-    "path":"folders/Objects/Persistent objects.yy",
+    "name":"Networking Objects",
+    "path":"folders/Objects/Persistent objects/Networking Objects.yy",
   },
   "parentObjectId":null,
   "persistent":true,
