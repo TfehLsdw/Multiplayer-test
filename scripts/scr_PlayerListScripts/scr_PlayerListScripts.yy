@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_PlayerListScripts",
   "parent":{
-    "name":"LobbyScripts",
-    "path":"folders/Scripts/LobbyScripts.yy",
+    "name":"Data Array Scripts",
+    "path":"folders/Scripts/Data Array Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

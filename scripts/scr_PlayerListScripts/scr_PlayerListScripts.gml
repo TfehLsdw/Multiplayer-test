@@ -1,9 +1,7 @@
 //@desc adds a player to the list according to its steam ID
 function scr_addPlayerToList(_steamId)
-{	
-		var _playerListSlot = array_length(global.playerList);
-		
-		array_push(global.playerList, scr_defaultPlayerList(_steamId, _playerListSlot))
+{			
+		array_push(global.playerList, scr_defaultPlayerList(_steamId))
 }
 
 //THIS REMOVES ALL PLAYERS FROM LIST, NEED FIX
@@ -70,15 +68,26 @@ function scr_checkPlayersReady()
 	return true;
 }
 
-function scr_defaultPlayerList(_steamId, _slot)
+function scr_defaultPlayerList(_steamId)
 {
 	var _steamName = steam_get_user_persona_name_sync(_steamId)
+	var _slot = array_length(global.playerList)
+	var _char = _slot;
+	
+	for (var i = 0; i < _slot; i++)
+	{
+		if(global.playerList[i].currentCharacter == 1)
+		{
+			_char = 0
+			break;
+		}
+	}
 	
 	return {
 			steamId : _steamId,
 			steamName : _steamName,
 			playerNumber : _slot,
-			currentCharacter : _slot,
+			currentCharacter : _char,
 			readyStatus : 0
 		}
 }

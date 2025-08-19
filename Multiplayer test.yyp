@@ -25,6 +25,7 @@
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Game Scripts","folderPath":"folders/Scripts/Game Scripts.yy","name":"Game Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Data Array Scripts","folderPath":"folders/Scripts/Data Array Scripts.yy","name":"Data Array Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"LobbyScripts","folderPath":"folders/Scripts/LobbyScripts.yy","name":"LobbyScripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menu Scripts","folderPath":"folders/Scripts/Menu Scripts.yy","name":"Menu Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Network Scripts","folderPath":"folders/Scripts/Network Scripts.yy","name":"Network Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
