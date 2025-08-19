@@ -1,3 +1,3 @@
 event_inherited()
 
-global.request = noone
+global.request = noone //OPTIMIZE: figure out how to do this without a global variable

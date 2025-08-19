@@ -1,13 +1,13 @@
 switch(async_load[?"event_type"])
 {
-	case "lobby_created":
+	case "lobby_created": //triggered when creating lobby
 	
 		show_debug_message("lobby created with ID: " + string(steam_lobby_get_lobby_id()));
 		steam_lobby_join_id(steam_lobby_get_lobby_id());
 		
 			break;
 			
-	case "lobby_joined":
+	case "lobby_joined": //triggered when joining lobby (incl host)
 		
 		if (steam_lobby_is_owner())
 		{
@@ -16,14 +16,22 @@ switch(async_load[?"event_type"])
 			steam_lobby_set_data("isTfehTest", "true");
 			steam_lobby_set_data("Creator", steam_get_persona_name())
 			steam_lobby_set_data("Code", _lobbyCode)
-			show_debug_message("lobby code is " + string(steam_lobby_get_data("Code")))
+			steam_lobby_set_joinable(true)
+			
+			//show_debug_message("lobby code is " + string(steam_lobby_get_data("Code")))
 		}
 		
 		room_goto(rm_LobbyMenu)
 		
 			break;
+			
+		case "game_lobby_join_requested": //triggered when asking to join lobby through steam
 		
-		case "lobby_list":
+			var _friendLobbyId = async_load[? "lobby_id"];
+			steam_lobby_join_id(_friendLobbyId)
+			break;
+	
+		case "lobby_list": //triggered when asking for lobby list with "steam_lobby_list_request"
 		
 			var _lobbyCount = steam_lobby_list_get_count()
 			
