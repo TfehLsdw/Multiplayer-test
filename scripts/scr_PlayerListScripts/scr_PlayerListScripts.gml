@@ -4,7 +4,6 @@ function scr_addPlayerToList(_steamId)
 		array_push(global.playerList, scr_defaultPlayerList(_steamId))
 }
 
-//THIS REMOVES ALL PLAYERS FROM LIST, NEED FIX
 function scr_removePlayerFromList(_steamId)
 {
 	
@@ -31,28 +30,31 @@ function scr_refreshPlayerListNumber()
 	{
 		global.playerList[i].playerNumber = i
 	}
+	
 }
 
 
 function scr_updateReadyStatus()
 {
-	for (var i = 0; i < array_length(global.playerList); i++)
+	var _playerList = global.playerList
+	for (var i = 0; i < array_length(_playerList); i++)
 	{
-		if (global.playerList[i].steamId == global.localSteamId)
+		if (_playerList[i].steamId == global.localSteamId)
 		{
-			if (global.playerList[i].readyStatus == 0)
+			if (_playerList[i].readyStatus == 0)
 			{
-				global.playerList[i].readyStatus = 1
+				_playerList[i].readyStatus = 1
 			}
 		
-			else if ( global.playerList[i].readyStatus == 1)
+			else if (_playerList[i].readyStatus == 1)
 			{
-				global.playerList[i].readyStatus = 0
+				_playerList[i].readyStatus = 0
 			}
 			
 			break;
 		}
 	}
+	scr_sendArray(scr_otherPlayerId(), NETWORK_PACKETS.SEND_ARRAY_ALL_LIST, global.playerList)
 }
 
 function scr_checkPlayersReady()

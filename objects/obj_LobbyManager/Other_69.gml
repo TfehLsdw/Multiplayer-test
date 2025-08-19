@@ -23,8 +23,9 @@ switch(async_load[? "event_type"])
 			{
 				show_debug_message("player " + steam_get_user_persona_name_sync(_requestingId) + " left the lobby" );
 				
-				scr_removePlayerFromList(_requestingId) //THIS REMOVES ALL PLAYERS FROM LIST, NEED FIX
+				scr_removePlayerFromList(_requestingId)
 				global.isHost = (steam_lobby_get_owner_id() == global.localSteamId)
+				if (steam_lobby_get_owner_id() == global.localSteamId) global.myPlayerIndex = 0;
 			}
 				
 				break;

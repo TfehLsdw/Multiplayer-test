@@ -21,11 +21,12 @@ switch(async_load[?"event_type"])
 			//show_debug_message("lobby code is " + string(steam_lobby_get_data("Code")))
 		}
 		
+		
 		room_goto(rm_LobbyMenu)
 		
 			break;
 			
-		case "game_lobby_join_requested": //triggered when asking to join lobby through steam
+		case "lobby_join_requested": //triggered when asking to join lobby through steam
 		
 			var _friendLobbyId = async_load[? "lobby_id"];
 			steam_lobby_join_id(_friendLobbyId)

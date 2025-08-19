@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_otherPlayerId",
   "parent":{
-    "name":"Network Scripts",
-    "path":"folders/Scripts/Network Scripts.yy",
+    "name":"Helper Scripts",
+    "path":"folders/Scripts/Helper Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
