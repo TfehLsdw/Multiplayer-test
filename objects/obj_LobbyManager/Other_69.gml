@@ -4,8 +4,6 @@ switch(async_load[? "event_type"])
 		
 		var _requestingId = async_load[? "user_id"];
 		
-		show_debug_message("requestingId on load: " + string(_requestingId))
-		
 		var _change_flags = async_load[? "change_flags"]
 				//show_debug_message("Flags: " + string(async_load[? "change_flags"]));
 				//show_debug_message("ID: " + string(_requestingId));
@@ -28,6 +26,6 @@ switch(async_load[? "event_type"])
 				scr_removePlayerFromList(_requestingId) //THIS REMOVES ALL PLAYERS FROM LIST, NEED FIX
 				global.isHost = (steam_lobby_get_owner_id() == global.localSteamId)
 			}
-				show_debug_message("requestingId on end: " + string(_requestingId))
+				
 				break;
 	}
