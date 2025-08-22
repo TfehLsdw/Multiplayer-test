@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_sendExecuteFunction",
   "parent":{
-    "name":"Network Scripts",
-    "path":"folders/Scripts/Network Scripts.yy",
+    "name":"General",
+    "path":"folders/Scripts/Network Scripts/General.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

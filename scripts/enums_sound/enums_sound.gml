@@ -1,0 +1,13 @@
+enum SOUND_CHARACTERS {
+	
+	SFX_BALLER = 0,
+	SFX_MATAN = 1,
+	SFX_RAMMUS = 2,
+}
+
+enum MUSIC_CHARACTERS {
+	
+	MUS_BALLER = 0,
+	MUS_MATAN = 1,
+	MUS_RAMMUS = 2,
+}

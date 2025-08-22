@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_gameStart",
   "parent":{
-    "name":"Menu Scripts",
-    "path":"folders/Scripts/Menu Scripts.yy",
+    "name":"Lobby",
+    "path":"folders/Scripts/Network Scripts/Lobby.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

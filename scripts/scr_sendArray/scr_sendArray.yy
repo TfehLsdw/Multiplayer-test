@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_sendArray",
   "parent":{
-    "name":"Network Scripts",
-    "path":"folders/Scripts/Network Scripts.yy",
+    "name":"Sync",
+    "path":"folders/Scripts/Network Scripts/Sync.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

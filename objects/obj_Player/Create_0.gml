@@ -5,22 +5,11 @@ if (isLocal)
 playerCamera = camera_create_view(0,0,1920,1080)
 
 view_set_camera(0, playerCamera)
+
+scr_playMusic(currentCharacter, true)
 }
 
-characterSprite = noone
-
-switch (currentCharacter)
-{
-	case 0:
-		characterSprite = spr_Baller
-			break
-	case 1:
-		characterSprite = spr_Matan
-			break
-	case 2:
-		characterSprite = spr_Rammus
-			break
-}
+characterSprite = global.sprites.char[currentCharacter]
 
 y = currentY;
 //inside each player instance will be the code to perform the actions that are available

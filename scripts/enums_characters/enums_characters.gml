@@ -1,0 +1,5 @@
+enum CHARACTERS {
+	BALLER = 0,
+	MATAN = 1,
+	RAMMUS = 2,
+}

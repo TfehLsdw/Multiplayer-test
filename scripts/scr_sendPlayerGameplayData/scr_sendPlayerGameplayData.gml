@@ -10,6 +10,16 @@ function scr_sendPlayerGameplayData(_targetSteamId, _sendingPlayerIndex)
 	buffer_delete(_buffer)
 }
 
+function scr_handleSendPlayerGameplayData(_buffer)
+{
+	var _sendingPlayer = buffer_read(_buffer, buffer_u8)
+	var _newScreen = buffer_read(_buffer, buffer_u8)
+	var _newY = buffer_read(_buffer, buffer_f16)
+			
+	global.playerData[_sendingPlayer].currentScreen = _newScreen
+	global.playerData[_sendingPlayer].currentY = _newY
+			
+}
 /* use if need to expand the function with less hardcode
 
 function scr_sendPlayerGameplayData(_targetSteamId, _sendingPlayerIndex)
@@ -34,13 +44,3 @@ function scr_playerGameplayData(_sendingPlayerIndex)
 	return json_stringify(_gameplayData)
 }
 */
-function scr_handleSendPlayerGameplayData(_buffer)
-{
-	var _sendingPlayer = buffer_read(_buffer, buffer_u8)
-	var _newScreen = buffer_read(_buffer, buffer_u8)
-	var _newY = buffer_read(_buffer, buffer_f16)
-			
-	global.playerData[_sendingPlayer].currentScreen = _newScreen
-	global.playerData[_sendingPlayer].currentY = _newY
-			
-}

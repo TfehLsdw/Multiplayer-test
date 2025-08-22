@@ -1,0 +1,11 @@
+enum SPRITES_CHAR {
+	BALLER = 0,
+	MATAN = 1,
+	RAMMUS = 2,
+}
+
+enum SPRITES_CHARIMAGE {
+	BALLER = 0,
+	MATAN = 1,
+	RAMMUS = 2,
+}

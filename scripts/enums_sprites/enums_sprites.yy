@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_PlaySound",
+  "%Name":"enums_sprites",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_PlaySound",
+  "name":"enums_sprites",
   "parent":{
-    "name":"Game Scripts",
-    "path":"folders/Scripts/Game Scripts.yy",
+    "name":"enums",
+    "path":"folders/Scripts/enums.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

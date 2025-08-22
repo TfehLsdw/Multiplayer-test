@@ -7,5 +7,6 @@ function scr_exitToMainMenu()
 	global.playerData = []
 	global.isHost = false;
 	with obj_LobbyManager instance_destroy()
+	audio_stop_all()
 	room_goto(rm_MainMenu)
 }

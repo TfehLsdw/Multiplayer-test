@@ -2,8 +2,8 @@ global.settings = {
 	video : {
 		fullscreen: true
 		},
-	sound : {
+	audio : {
 		volumeMusic : 50,
-		volumeSound : 50
+		volumeSfx : 50
 		},
 }

@@ -13,9 +13,19 @@ if (isLocal)
 	
 	var needUpdate = false;
 	
-	if (keyboard_check_pressed(ord("X")))
+	if (InputPressed(INPUT_VERB.SHOW_IMAGE_SELF))
 	{
-		scr_PlaySound(snd_VineBoom);
+		scr_triggerImageSequence(currentCharacter, 0)
+	}
+	
+	if (InputPressed(INPUT_VERB.SHOW_IMAGE_OTHER))
+	{
+		scr_triggerImageSequence(currentCharacter, 1)
+	}
+	
+	if (InputPressed(INPUT_VERB.SHOW_IMAGE_BOTH))
+	{
+		scr_triggerImageSequence(currentCharacter, 2)
 	}
 	
 	if (keyboard_check_pressed(ord("E")))
@@ -30,13 +40,13 @@ if (isLocal)
 		needUpdate = true; 
 	}
 	
-	if (keyboard_check_pressed(ord("W")))
+	if (InputPressed(INPUT_VERB.MOVE_UP))
 	{
 		currentY -= 1080; 
 		needUpdate = true; 
 	}
 	
-	if (keyboard_check_pressed(ord("S")))
+	if (InputPressed(INPUT_VERB.MOVE_DOWN))
 	{
 		currentY += 1080; 
 		needUpdate = true; 

@@ -32,7 +32,11 @@ while (steam_net_packet_receive())
 							break;
 					}
 				break;
-					
+				
+		case NETWORK_PACKETS.SEND_IMAGE_SEQUENCE:
+			scr_handleSendImageSequence(inbuf)
+				break;
+			
 		
 		default:
 		show_debug_message("packet unknown")

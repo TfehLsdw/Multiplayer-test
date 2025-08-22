@@ -1,1 +1,1 @@
-array_delete(global.playerList,0,1)
+//array_delete(global.playerList,0,1)
