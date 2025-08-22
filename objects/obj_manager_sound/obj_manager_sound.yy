@@ -6,8 +6,8 @@
   "name":"obj_manager_sound",
   "overriddenProperties":[],
   "parent":{
-    "name":"Persistent objects",
-    "path":"folders/Objects/Persistent objects.yy",
+    "name":"useless",
+    "path":"folders/Objects/useless.yy",
   },
   "parentObjectId":null,
   "persistent":false,
