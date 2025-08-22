@@ -1,12 +1,15 @@
 if (InputPressed(INPUT_VERB.TOGGLE_FULLSCREEN))
 {
-	if (!window_get_fullscreen())
-	{
-	window_set_fullscreen(true)
-	}
-	else if (window_get_fullscreen())
-	{
-	window_set_fullscreen(false)
-	}
-	
+	scr_toggleFullscreen()
+}
+
+if (InputPressed(INPUT_VERB.BACK_TO_MAIN_MENU))
+{
+	scr_exitToMainMenu()
+}
+
+if (InputPressed(INPUT_VERB.TOGGLE_PAUSE))
+{
+	scr_togglePause()
+	show_debug_message("is game paused?: " + string(global.paused))
 }

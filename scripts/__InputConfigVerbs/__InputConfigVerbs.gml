@@ -11,7 +11,8 @@ function __InputConfigVerbs()
 	   SCREEN_TRADE,
 	   SCREEN_MOVE,
 	   BACK_TO_MAIN_MENU,
-	   TOGGLE_FULLSCREEN
+	   TOGGLE_FULLSCREEN,
+	   TOGGLE_PAUSE
     }
 	
     InputDefineVerb(INPUT_VERB.SHOW_IMAGE_SELF,  "showImageSelf",  ord("1"), undefined);
@@ -23,6 +24,7 @@ function __InputConfigVerbs()
 	InputDefineVerb(INPUT_VERB.SCREEN_MOVE, "screenMove", ord("C"), undefined);
 	InputDefineVerb(INPUT_VERB.BACK_TO_MAIN_MENU, "backToMainMenu", ord("B"), undefined);
 	InputDefineVerb(INPUT_VERB.TOGGLE_FULLSCREEN, "toggleFullscreen", ord("F"), undefined);
+	InputDefineVerb(INPUT_VERB.TOGGLE_PAUSE, "togglePause", vk_escape, undefined);
 	
     enum INPUT_CLUSTER
     {
